@@ -9,24 +9,53 @@
         <div class="title">
             <h1 id="title">My Well-being</h1>
         </div>
+        <!--NavBar-->
         <div class="topnav">
             <ul class="navbar">
-                <li>Home</li>
-                <li>Latest News</li>
-                <li>Stats</li>
-                <li>Contribute</li>
-                <li>Help</li>
+                <li data-target:="#homepage">Home</li>
+                <li data-target:="#news">Latest News</li>
+                <li data-target:="#stats">Statistics</li>
+                <li data-target:="#contribute">Contribute</li>
+                <li data-target:="#help">Help</li>
                 <li>
                     <div class="stories">
                         <button class="dropbtn">Share+</button>
                         <div class="storyDropDown">
-                            <a href="#">Read</a>
-                            <a href="#">Share Story</a>
+                            <a href="#" data-target:="#read-story">Read</a>
+                            <a href="#" data-target:="#share-story">Share Story</a>
                         </div>
                     </div>
                 </li> 
             </ul>
         </div>
-        <script src="script.js"></script>
+
+        <!--Tab content-->
+        <div class="content">
+            <div id="homepage">
+                <p>content</p>
+            </div>
+            <div id="news">
+                <p>content</p>
+            </div>
+            <div id="stats">
+                <p>content</p>
+            </div>
+            <div id="contribute">
+                <p>content</p>
+            </div>
+            <div id="help">
+                <p>content</p>
+            </div>
+            <div id="read-story">
+                <p>content</p>
+            </div>
+            <div id="share-story">
+                <p>content</p>
+            </div>
+        </div>
+
+
+        <!--Script-->
+        <script src="script.js" defer></script>
     </body>
 </html>
