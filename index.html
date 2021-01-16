@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>My Well-being</title>
         <link rel="stylesheet" href="style.css">
+        <!--Script-->
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="title">
@@ -12,17 +14,18 @@
         <!--NavBar-->
         <div class="topnav">
             <ul class="navbar">
-                <li data-target:="#homepage">Home</li>
-                <li data-target:="#news">Latest News</li>
-                <li data-target:="#stats">Statistics</li>
-                <li data-target:="#contribute">Contribute</li>
-                <li data-target:="#help">Help</li>
-                <li>
+                <li><button class="tab-button" data-for-tab="1">Home</button></li>
+                <li><button class="tab-button" data-for-tab="2">Latest News</button></li>
+                <li><button class="tab-button" data-for-tab="3">Statistics</button></li>
+                <li><button class="tab-button" data-for-tab="4">Contribute</button></li>
+                <li><button class="tab-button" data-for-tab="5">Help</button></li>
                     <div class="stories">
                         <button class="dropbtn">Share+</button>
                         <div class="storyDropDown">
-                            <a href="#" data-target:="#read-story">Read</a>
-                            <a href="#" data-target:="#share-story">Share Story</a>
+                            <ul>
+                                <li><button class="tab-button" data-for-tab="6">Read-story</button></li>
+                                <li><button class="tab-button" data-for-tab="7">Share-story</button></li>
+                            </ul>
                         </div>
                     </div>
                 </li> 
@@ -31,31 +34,13 @@
 
         <!--Tab content-->
         <div class="content">
-            <div id="homepage">
-                <p>content</p>
-            </div>
-            <div id="news">
-                <p>content</p>
-            </div>
-            <div id="stats">
-                <p>content</p>
-            </div>
-            <div id="contribute">
-                <p>content</p>
-            </div>
-            <div id="help">
-                <p>content</p>
-            </div>
-            <div id="read-story">
-                <p>content</p>
-            </div>
-            <div id="share-story">
-                <p>content</p>
-            </div>
+            <div class="tab-content" data-tab="1"><h1>1</h1></div>
+            <div class="tab-content" data-tab="2"><h1>2</h1></div>
+            <div class="tab-content" data-tab="3"><h1>3</h1></div>
+            <div class="tab-content" data-tab="4"><h1>1</h1></div>
+            <div class="tab-content" data-tab="5"><h1>2</h1></div>
+            <div class="tab-content" data-tab="6"><h1>3</h1></div>
+            <div class="tab-content" data-tab="7"><h1>1</h1></div>
         </div>
-
-
-        <!--Script-->
-        <script src="script.js" defer></script>
     </body>
 </html>
