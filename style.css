@@ -1,6 +1,7 @@
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 #title{
     text-align: center;
     font-size: 45px;
@@ -10,6 +11,9 @@ html{
 
     height: 100px;
 }  
+
+/*NAVIGATION BAR -----------------------------------*/
+
 .navbar{
     list-style-type: none;
     display: flex;
@@ -49,3 +53,5 @@ html{
   .stories:hover .storyDropDown {
     display: block;
   }
+
+  /* ----------------------------------------------------------------------*/
