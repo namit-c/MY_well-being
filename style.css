@@ -23,6 +23,14 @@ html{
 .navbar li:hover{
     color: red;
 }
+
+.tab-content{
+  display: none;
+}
+
+.tab-content:active{
+  display: block;
+}
   
   /* Dropdown content (hidden by default) */
   .storyDropDown {
