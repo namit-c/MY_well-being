@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <!--Script-->
         <script src="script.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="title">
@@ -34,13 +35,30 @@
 
         <!--Tab content-->
         <div class="content">
+            <!-- IFrames from: https://css-tricks.com/the-simplest-ways-to-handle-html-includes/ -->
             <div class="tab-content" data-tab="1"><h1>1</h1></div>
-            <div class="tab-content" data-tab="2"><h1>2</h1></div>
-            <div class="tab-content" data-tab="3"><h1>3</h1></div>
-            <div class="tab-content" data-tab="4"><h1>1</h1></div>
+
+            <div class="tab-content" data-tab="2">
+                <center>
+                    <iframe src="articles.html" style="width:400px" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                    </center>
+            </div>
+
+            <div class="tab-content" data-tab="3">
+                <center>
+                <iframe src="stats.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                </center>
+            </div>
+
+            <div class="tab-content" data-tab="4">
+                <center>
+                <iframe src="contributions.html"  onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                </center>
+            </div>
             <div class="tab-content" data-tab="5"><h1>2</h1></div>
             <div class="tab-content" data-tab="6"><h1>3</h1></div>
             <div class="tab-content" data-tab="7"><h1>1</h1></div>
         </div>
+
     </body>
 </html>
