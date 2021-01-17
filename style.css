@@ -118,3 +118,9 @@ button:focus{
     outline: none;
     border-bottom: black;
 }
+
+iframe{
+    width: 400px; 
+    height: 300px; 
+    border: 0px none;
+}
