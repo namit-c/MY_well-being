@@ -56,7 +56,7 @@ display: block;
 .storyDropDown {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffff00;
   min-width: 160px;
 }
 
