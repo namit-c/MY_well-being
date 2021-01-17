@@ -8,6 +8,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  height: 100%;
 }
 
 .title{
@@ -50,6 +51,7 @@ display: none;
 
 .tab-content:active{
 display: block;
+margin: 50px;
 }
   
 /* Dropdown content (hidden by default) */

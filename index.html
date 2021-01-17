@@ -9,11 +9,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
+        <div class="title">
+            <h1 id="title">My Well-being</h1>
+        </div>
         <!--NavBar-->
         <div class="topnav">
-            <div class="title">
-                <h1 id="title">My Well-being</h1>
-            </div>
             <ul class="navbar">
                 <li><button class="tab-button" data-for-tab="1">Home</button></li>
                 <li><button class="tab-button" data-for-tab="2">Latest News</button></li>
@@ -39,18 +39,15 @@
             <div class="tab-content" data-tab="1"><h1>1</h1></div>
 
             <div class="tab-content" data-tab="2">
-                 <!-- RSS FEED: http://trauma.blog.yorku.ca/category/news/feed -->
-                    <!-- RSS Widget: https://app.taggbox.com/ -->
-                    <center>
-                        <div class="taggbox-container" style=" width:500px;height:700px;overflow: auto;"><div class="taggbox-socialwall" data-wall-id="46063" view-url="https://widget.taggbox.com/46063">  </div><script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script></div>
+                <center>
+                    <iframe src="articles.html" style="width:400px" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
                     </center>
             </div>
 
             <div class="tab-content" data-tab="3">
-                 <!-- Source: https://ourworldindata.org/mental-health -->
-                <iframe src="https://ourworldindata.org/grapher/share-with-mental-and-substance-disorders?time=2017" loading="lazy"></iframe>   
-                <iframe src="https://ourworldindata.org/grapher/prevalence-by-mental-and-substance-use-disorder" loading="lazy"></iframe>
-                <iframe src="https://ourworldindata.org/grapher/depression-by-level-of-education-employment" loading="lazy"></iframe>
+                <center>
+                <iframe src="stats.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                </center>
             </div>
 
             <div class="tab-content" data-tab="4">
@@ -60,7 +57,52 @@
             </div>
             <div class="tab-content" data-tab="5">
                 <center>
-                    <iframe src="help.html"  onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                    <h3> Center for Addiction and Mental Health (CAHM) - CANADA</h5>
+                        <ul>
+                            <li><q>Crisis and support services are listed below. If you or someone you know has suicide-related concerns, please call the Canada Suicide Prevention Helpline,</q>
+                                <br>
+                                <center>
+                                    <h2>Phone (General): 1-833-456-4566</h2>
+                                </center>
+                                
+                            </li>
+                            
+                            <li>24 Hour Crisis Lines: 365 days, 24 hours </li>
+                            <h4>Phone (Toronto): 416-408-4357</h4>
+                            
+                            <h4>Phone (Peel Region): 905-459-7777 or TTY: 905-278-4890</h4>
+                
+                            <br>
+                            <li>Specialized Resources</li>
+                            <h4>Phone (Multilingual Distress Line): 905-459-7777</h4>
+                
+                            <h4>Phone (Trans Lifeline): 1-877-330-6366</h4>
+                
+                            <h4>Phone (LGBT YouthLine): 1-800-268-9688 or text: 647-694-4275 or chat <a href="https://www.youthline.ca/">youthline.ca</a></h4>
+                
+                            <h4>Phone (Black Youth Helpline): 416-285-9944 or National Phone: 1-833-294-8650</h4>
+                            <br>
+                            <li>For more Contact information, visit <a href="https://www.camh.ca/en/suicide-prevention/get-help">Link</a></li>
+                
+                        </ul>
+                        
+                
+                        <br>
+                        <h3>Mental Health America (MHA)</h3>
+                        <ul>
+                            <li>24 Hour Crisis Lines: </li>
+                            <h3>Phone: 1-800-273-TALK (8255) </h3>
+                            <h3>Text: MHA to 741741</h3>
+                
+                        </ul>
+                
+                        <br>
+                
+                        <h3>Mental Health Europe (MHE)</h3>
+                        <ul>
+                            <li>For more information for help lines in Europe, click on the following link <a href="https://www.mhe-sme.org/library/youth-helplines/">https://www.mhe-sme.org/library/youth-helplines/</a> </li>
+                        </ul>
+                
                 </center>
             </div>
             <div class="tab-content" data-tab="6"><h1>3</h1></div>
