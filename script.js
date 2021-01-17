@@ -16,3 +16,10 @@ tabs.forEach(tab => {
     activate.className += ":active";
   })
 })
+
+/*Initial state*/
+function setup(){
+  document.querySelector('.tab-content[data-tab="1"]').className +=":active";
+}
+
+setup()
